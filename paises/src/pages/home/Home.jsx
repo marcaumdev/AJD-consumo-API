@@ -1,24 +1,77 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../assets/css/Home.css";
+import Pais from "../../components/pais/Pais.jsx";
 
-import { paisesAPI } from '../../services/api.js';
+const url = "https://restcountries.com/v3.1/all";
 
-import '../../assets/css/Home.css'
+const Home = () => {
+  const [paises, setPaises] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const semPaises = paises.status || paises.message;
 
-export const Home = () => {
-    const [paises, setPaises] = useState([]);
-    paisesAPI()
-    setPaises(localStorage.getItem("paises"))
+  const showDetails = (code) => {
+    navigate(`/${code}`);
+  };
 
-    return (
-        <>
-            <header className="header">
-                <span>Países</span>
-            </header>
-            {paises.map((item) => (
-                <p>{item}</p>
-            ))}
-        </>
-    )
-}
+  useEffect(() => {
+    try {
+      let response = [];
+      const fetchData = async () => {
+        setLoading(true);
+        response = await fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then(setLoading(false));
+        setPaises(response);
+      };
+      fetchData();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
+  return (
+    <div className="container">
+      <header>
+        <h1>Países</h1>
+      </header>
+      {
+        loading ? (
+          <div>
+            Loading . . .
+          </div>
+        ) : (
+          <>
+            <div>
+              <section className="paises">
+                {!semPaises ? (
+                  paises?.map((pais, index) => {
+                    return (
+                      <Pais
+                        key={index}
+                        code={pais.name.common}
+                        name={pais.name.common}
+                        capital={pais.capital}
+                        population={pais.population.toLocaleString('pt-BR')}
+                        flag={pais.flags.png}
+                        region={pais.region}
+                        showDetails={showDetails}
+                      />
+                    );
+                  })
+                ) : (
+                  <p>Nenhum país encontrado</p>
+                )}
+              </section>
+            </div>
+          </>
+        )
+      }
+    </div>
+  );
+};
 
 export default Home;
