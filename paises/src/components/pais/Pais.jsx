@@ -24,7 +24,7 @@ const Pais = ({
       <section>
         <h2>{name}</h2>
         <p>
-          <span className="paisInfo">Population: </span>
+          <span className="paisInfo">Populacão: </span>
           {population}
         </p>
         <p>
@@ -32,7 +32,7 @@ const Pais = ({
           {capital}
         </p>
         <p>
-          <span className="paisInfo">Region: </span>
+          <span className="paisInfo">Região: </span>
           {region}
         </p>
       </section>
