@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.IO;
 using System.Net;
 
 namespace paises_Csharp
@@ -9,48 +7,123 @@ namespace paises_Csharp
     {
         static void Main(string[] args)
         {
-            showData();
-            Console.ReadKey();
+            bool rodando = true;
+            Console.WriteLine("Bem-vindo ao buscador de países!");
+            do
+            {
+                int num = showData();
+                if (num == 0)
+                {
+                    rodando = false;
+                }
+            } while (rodando == true);
+
+            Console.WriteLine("\nPrograma Encerrado!");
         }
 
-        static void showData()
+        static int showData()
         {
-            Console.WriteLine("Digite o nome de um personagem de rick and morty");
-            string nome = Console.ReadLine();
-            var json = GetJSON(nome);
-            if (json != null)
+            Console.WriteLine($"\nDigite o nome de um país ou 0 para sair.");
+            string pais = Console.ReadLine();
+            if (pais == "0")
             {
-                var data = JsonConvert.DeserializeObject<dynamic>(json);
-                Console.WriteLine($"{data.results}");
-                foreach (dynamic temp in data)
-                {
-                    
-                }
+                return 0;
             }
             else
             {
-                Console.WriteLine("Este personagem não existe!");
+
+                var json = GetJSON(pais);
+                if (json != null)
+                {
+                    var data = JsonConvert.DeserializeObject<dynamic>(json);
+                    var paisBuscado = data[0];
+                    var nome = paisBuscado.name.common;
+                    var sigla = paisBuscado.cioc;
+                    var moedas = paisBuscado.currencies;
+                    var capitais = paisBuscado.capital;
+                    var regiao = paisBuscado.region;
+                    var subregiao = paisBuscado.subregion;
+                    var linguas = paisBuscado.languages;
+                    var fronteiras = paisBuscado.borders;
+                    var area = string.Format("{0:n}", paisBuscado.area);
+                    var populacao = string.Format("{0:n}", paisBuscado.population);
+
+                    int ca = 1;
+                    int f = 1;
+                    int m = 1;
+                    int l = 1;
+
+                    Console.WriteLine($"\nNome: {nome} ({sigla})");
+                    Console.WriteLine($"População: {populacao}");
+                    foreach (string capital in capitais)
+                    {
+                        Console.WriteLine($"Capital {ca}: {capital}");
+                        ca++;
+                    }
+                    Console.WriteLine($"Regiao: {regiao}");
+                    Console.WriteLine($"Sub-Região: {subregiao}");
+                    foreach (dynamic moeda in moedas)
+                    {
+                        Console.WriteLine($"Moeda {m}: {moeda.Value.name}");
+                        m++;
+                    }
+
+                    foreach (dynamic lingua in linguas)
+                    {
+                        Console.WriteLine($"Língua {l}: {lingua.Value.Value}");
+                        l++;
+                    }
+
+
+                    if (fronteiras != null)
+                    {
+                        foreach (string fronteira in fronteiras)
+                        {
+                            Console.WriteLine($"Fronteira {f}: {fronteira}");
+                            f++;
+                        }
+                        Console.WriteLine($"Area: {area}");
+                    }
+                    return 1;
+                }
+                else
+                {
+                    Console.WriteLine("Este país não existe!");
+                    return 1;
+                }
             }
         }
 
-        static string GetJSON(string nome)
+        static string GetJSON(string pais)
         {
-            var request = WebRequest.Create($"https://rickandmortyapi.com/api/character/?name={nome}");
+            var request = WebRequest.Create($"https://restcountries.com/v3.1/name/{pais}");
 
             request.Method = "GET";
-            var response = (HttpWebResponse)request.GetResponse();
-            if (response.StatusCode == HttpStatusCode.OK)
+            try
             {
-                using (var stream = response.GetResponseStream())
+                var response = (HttpWebResponse)request.GetResponse();
+                if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    var reader = new StreamReader(stream);
-                    var json = reader.ReadToEnd();
-                    return json;
+                    using (var stream = response.GetResponseStream())
+                    {
+                        var reader = new StreamReader(stream);
+                        var json = reader.ReadToEnd();
+                        return json;
+                    }
                 }
+                else
+                {
+                    return null;
+                }
+
             }
-            return null;
+            catch (System.Exception)
+            {
+                return null;
+            }
+
         }
     }
 }
-    
+
 

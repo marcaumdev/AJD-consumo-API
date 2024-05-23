@@ -36,3 +36,22 @@ C:\Users\marcaum\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\refint\p
 C:\Users\marcaum\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.pdb
 C:\Users\marcaum\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.genruntimeconfig.cache
 C:\Users\marcaum\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\ref\paises CSharp.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\paises CSharp.exe
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\paises CSharp.deps.json
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\paises CSharp.runtimeconfig.json
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\paises CSharp.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\paises CSharp.pdb
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\bin\Debug\net8.0\RestSharp.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.csproj.AssemblyReference.cache
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.AssemblyInfoInputs.cache
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.AssemblyInfo.cs
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.csproj.CoreCompileInputs.cache
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.sourcelink.json
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises C.ECA5B0DD.Up2Date
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\refint\paises CSharp.dll
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.pdb
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\paises CSharp.genruntimeconfig.cache
+C:\Users\N04\Desktop\AJD-consumo-API\paises CSharp\obj\Debug\net8.0\ref\paises CSharp.dll
