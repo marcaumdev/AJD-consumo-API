@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\",
+  "WorkspaceRootPath": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|c:\\users\\marcaum\\desktop\\ajd-consumo-api\\paises csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|c:\\users\\48544763898\\desktop\\ajd-consumo-api\\paises csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|c:\\users\\marcaum\\desktop\\ajd-consumo-api\\paises csharp\\paises csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|c:\\users\\48544763898\\desktop\\ajd-consumo-api\\paises csharp\\paises csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B42A1CF9-BA7A-4C32-869B-A9924AE210C0}|paises CSharp.csproj|solutionrelative:paises csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\Program.cs",
+              "ToolTip": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwBkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "paises CSharp.csproj",
-              "DocumentMoniker": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
+              "DocumentMoniker": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
               "RelativeDocumentMoniker": "paises CSharp.csproj",
-              "ToolTip": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
+              "ToolTip": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
               "RelativeToolTip": "paises CSharp.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-22T23:14:50.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T23:14:50.67Z"
             }
           ]
         }
