@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj": {}
+    "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj": {
+    "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
         "projectName": "paises CSharp",
-        "projectPath": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
-        "packagesPath": "C:\\Users\\48544763898\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48544763898\\Desktop\\AJD-consumo-API\\paises CSharp\\obj\\",
+        "projectPath": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\paises CSharp.csproj",
+        "packagesPath": "C:\\Users\\marcaum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcaum\\Desktop\\AJD-consumo-API\\paises CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\48544763898\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marcaum\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
